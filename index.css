@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    color: #282973;
+    background-image: url(rafiki.svg);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-attachment: absolute;
+    background-position-x: 95%;
+    background-position-y: 30%;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f8c389;
+    background: linear-gradient(to right, rgba(248, 195, 137, 1), rgba(60, 78, 159, 1));
+    
+}
+
+
+.logo-image{
+    width: 281px;
+    height: 70px;
+    margin-right: auto;
+    padding: 10px
+}
+
+.navbar-links{
+    display: flex;
+    list-style: none;
+}
+
+a{
+    font-weight: 500;
+    font-size: 32px;
+    color: #ffffff;
+    text-decoration: none;
+    margin: 30px;
+    padding: 15px;
+}
+
+a:hover{
+    color:#CB6015;
+    cursor: pointer;
+}
+
+h1{
+    font-weight: 700;
+    font-size: 80px;
+    margin-top: 90px;
+    margin-left: 137px;
+}
+
+p{
+    font-weight: 500;
+    font-size: 24px;
+    margin-left: 110px;
+}
+
+input{
+    display:block;
+    font-family:'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    width: 180px;
+    height: 40px;
+    border: 2px solid #282973;
+    background-color: #EBB376;
+    border-radius: 30px;
+    color:#282973;
+    margin-top: 40px;
+    margin-left: 350px; 
+}
+
+input:hover{
+    color:#CB6015;
+    cursor: pointer;
+}
+
+.ellipses{
+    width: 300px;
+}
+
+@media (max-width: 1024px){
+    body{
+        width: 100%;
+    }
+    
+}
+
+@media (max-width: 428px){
+    body{
+        display:block;
+        width: 100%;
+        
+    }
+}
