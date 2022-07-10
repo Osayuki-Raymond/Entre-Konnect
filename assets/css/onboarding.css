@@ -126,6 +126,7 @@ section .dont_desktop {
     -webkit-user-select: none;
     user-select: none;
     margin: 0 1rem;
+    /* background: var(--blue); */
 }
 
 .controls .active {

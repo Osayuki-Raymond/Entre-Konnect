@@ -35,10 +35,10 @@ function showSlides(n) {
 
     // HIDING THE START AD NEXT BUTTONS
     if (slideIndex == 2) {
-        dots.className += " active";
+        document.getElementsByClassName("dots2").className += " active";
     }
 
     if (slideIndex == 3) {
-        dots.className += " active";
+        document.getElementsByClassName("dots3").className += " active";
     }
 }
