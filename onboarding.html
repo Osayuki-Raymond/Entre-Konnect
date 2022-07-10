@@ -9,61 +9,57 @@
     <title>Onboarding Page</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#">Harmburger</a>
-                    <a href="#">Colors</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
     <main>
-        <section class="slides fade first_onboarding">
-            <div class="first_text">
-                <h1>Community</h1>
-                <p>Join a community of like-minded individuals. Interact and share ideas with new as well as 
-                    seasoned entrepreneurs in your niche. Get your voice heard and receive answers to all 
-                    your questions.
-                </p>
-            </div>
-            <div class="first_image">
-
-            </div>
-        </section>
-
-        <section class="slides fade second_onboarding">
-            <div class="second_text">
-                <h1>Forums</h1>
-                <p>Participate in relevant conversations and discussions. You can share your experiences and 
-                    get useful insights on matters that relate to your business projects.
-                </p>
-            </div>
-            <div class="second_image">
-
+        <section class="slides fade">
+            <div class="first_onboarding">
+                <div class="first_text">
+                    <h1>Community</h1>
+                    <p>Join a community of like-minded individuals. Interact and share ideas with new as well as
+                        seasoned entrepreneurs in your niche. Get your voice heard and receive answers to all
+                        your questions.
+                    </p>
+                </div>
+                <div class="first_image">
+                    <img src="/assets/images/undraw_community_re_cyrm 1.jpg" alt="Community">
+                </div>
             </div>
         </section>
 
-        <section class="slides fade third_onboarding">
-            <div class="third_text">
-                <h1>Feeds</h1>
-                <p>Find relevant articles that help you scale those hurdles and achieve more.</p>
+        <section class="slides fade ">
+            <div class="second_onboarding">
+                <div class="second_text">
+                    <h1>Forums</h1>
+                    <p>Participate in relevant conversations and discussions. You can share your experiences and
+                        get useful insights on matters that relate to your business projects.
+                    </p>
+                </div>
+                <div class="second_image">
+                    <img src="/assets/images/undraw_online_connection_6778 (1) 1.jpg" alt="Forums">
+                </div>
             </div>
-            <div class="third_image">
+        </section>
 
-            </div>
-            <div>
-                <button type="button">Start</button>
+        <section class="slides fade">
+            <div class="third_onboarding">
+                <div class="third_text">
+                    <h1>Feeds</h1>
+                    <p>Find relevant articles that help you scale those hurdles and achieve more.</p>
+                </div>
+                <div class="third_image">
+                    <img src="/assets/images/Group 172.jpg" alt="Feeds">
+                </div>
             </div>
         </section>
 
         <div class="controls">
-            <a href="#" class="dots"></a>
-            <a href="#" class="dots"></a>
-            <a href="#" class="dots"></a>
-            <a href="#" class="next">></a>
+            <a href="#" class="dots dot1 active" onclick="currentSlide(1)"></a>
+            <a href="#" class="dots dot2" onclick="currentSlide(2)"></a>
+            <a href="#" class="dots dot3" onclick="currentSlide(3)"></a>
+            <a href="#" class="next" onclick="plusSlides(1)"><img src="/assets/images/Keyboard arrow right.svg" alt="Start Arrow" id="next"></a>
+        </div>
+
+        <div class="start">
+            <button type="button" id="start">Start</button>
         </div>
     </main>
 
