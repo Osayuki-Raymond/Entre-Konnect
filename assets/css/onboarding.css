@@ -20,12 +20,11 @@ body {
 
 main {
     width: 95%;
-    margin: 5rem auto;
+    margin: 5rem auto 0 auto;
 }
 
 section {
     color: var(--blue);
-    position: relative;
 }
 
 section h1 {
@@ -41,63 +40,22 @@ section p {
     line-height: 3rem;
 }
 
-.controls {
-    text-align: center;
+section .dont_desktop {
+    display: none;
 }
 
-.controls .dots {
-    position: absolute;
-    cursor: pointer;
-    color: var(--dots);
-    height: 1rem;
-    width: 1rem;
-    border-radius: 50%;
-    border: 2px solid var(--dots);
-    transition: background-color 1s ease;
-    -webkit-user-select: none;
-    user-select: none;
-    bottom: 5%;
-}
-
-.controls .active {
-    background-color: var(--dots);
-}
-
-.controls .dot1 {
-    margin: 0 2rem 0 0;
-}
-
-.controls .dot2 {
-    margin: 0 2rem;
-}
-
-.controls .dot3 {
-    margin: 0 0 0 4rem;
-}
-
-.controls .next {
-    position: absolute;
-    transition: .5s ease;
-    font-size: 1.5rem;
-    -webkit-user-select: none;
-    user-select: none;
-    font-weight: bold;
-    bottom: 0;
-    right: 10%;
-    z-index: 1000000;
-}
-
-/* First page */
 .first_onboarding, .second_onboarding, .third_onboarding {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+    display: flex;
+    gap: 5rem;
+}
+
+.first_text, .second_text, .third_text {
+    width: 50%;
 }
 
 .first_onboarding .first_image {
     max-width: 40rem;
     max-height: 30rem;
-    justify-self: end;
 }
 
 .first_onboarding img {
@@ -125,9 +83,50 @@ section p {
     height: 100%;
 }
 
-.start button {
-    display: none;
+
+/* BUTTONS START */
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-grow: 1;
+    width: 100%;
+    position: relative;
+    margin-top: 7rem;
+}
+
+.third .controls {
+    margin-top: 12rem;
+}
+
+.controls .dots {
+    cursor: pointer;
+    color: var(--dots);
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    border: 2px solid var(--dots);
+    transition: background-color 1s ease;
+    -webkit-user-select: none;
+    user-select: none;
+    margin: 0 1rem;
+}
+
+.controls .active {
+    background-color: var(--dots);
+}
+
+.controls .next {
+    transition: .5s ease;
+    font-size: 1.5rem;
+    -webkit-user-select: none;
+    user-select: none;
+    font-weight: bold;
     position: absolute;
+    right: 3%;
+}
+
+.start button {
     font-size: 2rem;
     line-height: 3rem;
     -webkit-user-select: none;
@@ -139,6 +138,153 @@ section p {
     border: none;
     width: 10rem;
     height: 4rem;
-    bottom: 3%;
-    right: 8%;
+    position: absolute;
+    right: 3%;
+    bottom: 5%;
+}
+/* BUTTON END */
+
+
+/* MEDIA QUERY FOR TABLET VIEW */
+@media (max-width: 1024px) {
+    .first_onboarding, .second_onboarding, .third_onboarding {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .third_onboarding {
+        gap: 4rem;
+    }
+
+    .first_image, .second_image, .third_image {
+        align-self: center;
+        -ms-flex-order: 1;
+        order: 1;
+    }
+
+    .first_text, .second_text, .third_text {
+        -ms-flex-order: 2;
+        order: 2;
+        align-self: flex-start;
+        width: 50%;
+        margin-left: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    section .dont_desktop {
+        display: block;
+    }
+
+    section .desktop {
+        display: none;
+    }
+
+    section h1 {
+        font-size: 3rem;
+        line-height: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    section p {
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+
+    .controls .next {
+        display: none;
+    }
+
+    .third .controls {
+        display: none;
+    }
+
+    .start button {
+        bottom: 0;
+        border-radius: 1rem;
+        top: 90%;
+    }
+
+    .controls {
+        margin-top: -.5rem;
+    }
+}
+
+
+/*  MOBILE VIEW */
+@media (max-width: 428px) {
+    main {
+        margin-bottom: 0;
+    }
+
+    .first_onboarding, .second_onboarding {
+        gap: 8rem;
+    }
+
+    .third_onboarding {
+        gap: 0;
+    }
+
+    .first_text, .second_text, .third_text {
+        align-self: flex-start;
+        text-align: left;
+        width: 100%;
+        margin-left: .5rem;
+        /* margin-top: 12rem; */
+    }
+
+    .third_text {
+        margin-top: 7rem;
+    }
+
+    section h1 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    margin-bottom: .7rem;
+    }
+
+    section p {
+    font-size: 1rem;
+    line-height: 2rem;
+    }
+
+    .first_onboarding .first_image {
+        max-width: 20rem;
+        max-height: 10rem;
+        align-self: center;
+    }
+
+    .second_onboarding .second_image {
+        max-width: 20rem;
+        max-height: 10rem;
+        align-self: center;
+    }
+
+    .third_onboarding .third_image {
+        max-width: 25rem;
+        max-height: 10rem;
+        align-self: center;
+    }
+
+    .controls {
+        position: absolute;
+        bottom: 40%;
+    }
+
+    .controls .next {
+        display: none;
+    }
+
+    .third .controls {
+        display: none;
+    }
+
+    .start button {
+        position: static;
+        width: 7rem;
+        height: 3rem;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        margin-top: 2rem;
+    }
 }

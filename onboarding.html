@@ -13,54 +13,73 @@
         <section class="slides fade">
             <div class="first_onboarding">
                 <div class="first_text">
-                    <h1>Community</h1>
-                    <p>Join a community of like-minded individuals. Interact and share ideas with new as well as
+                    <h1 class="desktop">Community</h1>
+                    <h1 class="dont_desktop">Connect</h1>
+                    <p class="desktop">Join a community of like-minded individuals. Interact and share ideas with new as well as
                         seasoned entrepreneurs in your niche. Get your voice heard and receive answers to all
-                        your questions.
+                        your questions
+                    </p>
+                    <p class="dont_desktop">
+                        Interact with new and experienced entrepreneurs in your niche and share ideas with them
                     </p>
                 </div>
                 <div class="first_image">
-                    <img src="/assets/images/undraw_community_re_cyrm 1.jpg" alt="Community">
+                    <img src="/assets/images/undraw_community_re_cyrm 1.jpg" alt="Community" class="desktop">
+                    <img src="/assets/images/undraw_connecting_teams_re_hno7 2.jpg" alt="Connect" class="dont_desktop">
                 </div>
+            </div>
+            <div class="controls">
+                <a href="#" class="dots dot1 active" onclick="currentSlide(1)"></a>
+                <a href="#" class="dots dot2" onclick="currentSlide(2)"></a>
+                <a href="#" class="dots dot3" onclick="currentSlide(3)"></a>
+                <a href="#" class="next" onclick="plusSlides(1)"><img src="/assets/images/Keyboard arrow right.svg"
+                        alt="Start Arrow" id="next"></a>
             </div>
         </section>
 
-        <section class="slides fade ">
+        <section class="slides fade">
             <div class="second_onboarding">
                 <div class="second_text">
                     <h1>Forums</h1>
-                    <p>Participate in relevant conversations and discussions. You can share your experiences and
-                        get useful insights on matters that relate to your business projects.
+                    <p class="desktop">Participate in relevant conversations and discussions. You can share your experiences and
+                        get useful insights on matters that relate to your business projects
+                    </p>
+                    <p class="dont_desktop">
+                        Create and join forum spaces where various topics and ideas are discussed and shared
                     </p>
                 </div>
                 <div class="second_image">
                     <img src="/assets/images/undraw_online_connection_6778 (1) 1.jpg" alt="Forums">
                 </div>
             </div>
+            <div class="controls">
+                <a href="#" class="dots dot1" onclick="currentSlide(1)"></a>
+                <a href="#" class="dots dot2" onclick="currentSlide(2)"></a>
+                <a href="#" class="dots dot3" onclick="currentSlide(3)"></a>
+                <a href="#" class="next" onclick="plusSlides(1)"><img src="/assets/images/Keyboard arrow right.svg"
+                        alt="Start Arrow" id="next2"></a>
+            </div>
         </section>
 
-        <section class="slides fade">
+        <section class="slides fade third">
             <div class="third_onboarding">
                 <div class="third_text">
                     <h1>Feeds</h1>
-                    <p>Find relevant articles that help you scale those hurdles and achieve more.</p>
+                    <p>Find relevant articles that help you scale those hurdles and achieve more</p>
                 </div>
                 <div class="third_image">
                     <img src="/assets/images/Group 172.jpg" alt="Feeds">
                 </div>
             </div>
+            <div class="controls">
+                <a href="#" class="dots dot1" onclick="currentSlide(1)"></a>
+                <a href="#" class="dots dot2" onclick="currentSlide(2)"></a>
+                <a href="#" class="dots dot3" onclick="currentSlide(3)"></a>
+            </div>
+            <div class="start">
+                <button type="button" id="start">Start</button>
+            </div>
         </section>
-
-        <div class="controls">
-            <a href="#" class="dots dot1 active" onclick="currentSlide(1)"></a>
-            <a href="#" class="dots dot2" onclick="currentSlide(2)"></a>
-            <a href="#" class="dots dot3" onclick="currentSlide(3)"></a>
-            <a href="#" class="next" onclick="plusSlides(1)"><img src="/assets/images/Keyboard arrow right.svg" alt="Start Arrow" id="next"></a>
-        </div>
-
-        <div class="start">
-            <button type="button" id="start">Start</button>
-        </div>
     </main>
 
     <script src="/assets/js/onboarding.js"></script>

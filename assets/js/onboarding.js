@@ -34,18 +34,18 @@ function showSlides(n) {
     dots[slideIndex - 1].className += " active";
 
     // HIDING THE START AD NEXT BUTTONS
-    if (slideIndex == 1) {
-        document.getElementById("next").style.display = "block";
-        document.getElementById("start").style.display = "none";
-    }
+    // if (slideIndex == 1) {
+    //     document.getElementById("next").style.display = "block";
+    //     document.getElementById("start").style.display = "none";
+    // }
 
-    if (slideIndex == 2) {
-        document.getElementById("next").style.display = "block";
-        document.getElementById("start").style.display = "none";
-    }
+    // if (slideIndex == 2) {
+    //     document.getElementById("next").style.display = "block";
+    //     document.getElementById("start").style.display = "none";
+    // }
 
-    if (slideIndex == 3) {
-        document.getElementById("next").style.display = "none";
-        document.getElementById("start").style.display = "block";
-    }
+    // if (slideIndex == 3) {
+    //     document.getElementById("next").style.display = "none";
+    //     document.getElementById("start").style.display = "block";
+    // }
 }
