@@ -83,7 +83,7 @@
     }
 
     .shift{
-        margin-left: 11px;
+        margin-left: 9px;
     }
 
     .icon{
@@ -93,9 +93,7 @@
     }
 
     .s-u-input-wrapper i{
-        color: #FFFFFF;
-        left: 2px;
-        right: 20px;
+        visibility: hidden;
     }
    
     .s-u-btn{
@@ -156,7 +154,7 @@
 @media screen and (max-width: 1024px) and (min-width: 429px) {
 
     body{
-        height: 1300px;
+        height: 1200px;
     }
 
     .signup-container{
@@ -167,6 +165,9 @@
     }
 
     .heading{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         position: relative;
         top: 30px
     }
@@ -179,15 +180,17 @@
         margin-bottom: 30px;
         position: absolute;
         top: 91px;
-        left: 17px;
+        margin-right: 170px;
         z-index: 1;
     }
 
     .s-up-img{
+        align-self: center;
+        justify-self: center;
         position: relative;
         z-index: 1;
-        top: 771px;
-        left: 194px;
+        top: 717px;
+        margin-left: 450px;
         height: 400px;
     }
 
@@ -220,7 +223,7 @@
     
     .s-u-full-name, .s-u-email, .s-u-user-name, .s-u-create-pwd, .s-u-confirm-pwd{
         outline: none;
-        border: none;
+        /* border: none; */
         width: 312.5px;
         height: 46px;
         letter-spacing: normal;
@@ -229,13 +232,11 @@
     }
 
     .s-u-input-wrapper i{
-        position: relative;
-        left: 2px;
-        color: #FFFFFF;
+        visibility: hidden;
     }
 
     .shift{
-        margin-left: 11px;
+        margin-left: 9px;
     }
 
     .icon{
@@ -246,7 +247,8 @@
     }
 
     .s-u-btn{
-        margin-top: 28px;
+        position: absolute;
+        top: 570px;
         height: 62px;
         width: 183px;
         border-radius: 15px;
@@ -257,23 +259,57 @@
         font-style: normal;
         font-weight: 400;
         font-size: 24px;
-        line-height: 36px;
         cursor: pointer;
     }
 
+    .log-in-link{
+        
+    }
+
     .log-in-link a{
-        position: relative;
-        left: 580px;
-        top: -532px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 661px;
+        padding: 0;
+        /* width: 109px; */
+        /* margin-left: 480px; */
         color: #326CFB;
-        font-style: normal;
         line-height: 24px;
         font-size: 28px;
         font-weight: 700;
     }
 
+    .log-in-link a:hover{
+        text-decoration: underline;
+    }
+
     .s-u-socials{
+        display: flex;
+        flex-direction: column;
         position: relative;
-        top: -440px;
+        justify-content: center;
+        align-items: center;
+        top: -490px;
+        margin-right: 150px;
+    }
+
+    .s-u-socials h3{
+        font-size: 26px;
+    }
+
+    .social-media-icons{
+        margin-left: 60px;
+        margin-top: 0.5em;
+    }
+
+    .social-media-icons a{
+        margin-left: 29px;
+    }
+
+    .social-media-icons a img{
+        width: 50px;
+        height: 50px;
     }
 }
