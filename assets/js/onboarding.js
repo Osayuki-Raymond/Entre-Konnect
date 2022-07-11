@@ -34,11 +34,11 @@ function showSlides(n) {
     dots[slideIndex - 1].className += " active";
 
     // HIDING THE START AD NEXT BUTTONS
-    if (slideIndex == 2) {
-        document.getElementsByClassName("dots2").className += " active";
-    }
+    // if (slideIndex == 2) {
+    //     document.getElementsByClassName("dots2").className += " active";
+    // }
 
-    if (slideIndex == 3) {
-        document.getElementsByClassName("dots3").className += " active";
-    }
+    // if (slideIndex == 3) {
+    //     document.getElementsByClassName("dots3").className += " active";
+    // }
 }
