@@ -8,6 +8,9 @@
     /* border: 1px solid red; */
 }
 
+.entre-logo{
+    display: none;
+}
 /* SIGNUP PAGE */
 
 @media screen and (max-width: 428px) {
@@ -113,12 +116,12 @@
 
     .log-in-link a{
         text-align: center;
-        left: 223px;
+        left: 53px;
         top: -7px;
         color: #326CFB;
         font-style: normal;
         line-height: 24px;
-        font-size: 16px;
+        font-size: 17px;
     }
 
     .log-in-link a:hover{
@@ -223,7 +226,7 @@
     
     .s-u-full-name, .s-u-email, .s-u-user-name, .s-u-create-pwd, .s-u-confirm-pwd{
         outline: none;
-        /* border: none; */
+        border: none;
         width: 312.5px;
         height: 46px;
         letter-spacing: normal;
@@ -262,19 +265,14 @@
         cursor: pointer;
     }
 
-    .log-in-link{
-        
-    }
-
     .log-in-link a{
         display: flex;
         align-items: center;
         justify-content: center;
-        position: absolute;
-        top: 661px;
+        position: relative;
+        bottom: 540px;
+        left: 120px;
         padding: 0;
-        /* width: 109px; */
-        /* margin-left: 480px; */
         color: #326CFB;
         line-height: 24px;
         font-size: 28px;
@@ -300,6 +298,7 @@
     }
 
     .social-media-icons{
+        display: flex;
         margin-left: 60px;
         margin-top: 0.5em;
     }
@@ -311,5 +310,153 @@
     .social-media-icons a img{
         width: 50px;
         height: 50px;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+
+    .signup-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .heading{
+        display: flex;
+        position: relative;
+        top: 60px;
+    }
+
+    .heading h2{
+        font-size: 50px;
+        font-style: normal;
+        color: #282973;
+        margin-right: 80px;
+        z-index: 1;
+    }
+
+    .s-up-img{
+        align-self: center;
+        justify-self: center;
+        position: relative;
+        z-index: 1;
+        top: 167px;
+        left: 200px;
+        height: 400px;
+    }
+
+    .entre-logo{
+        display: flex;
+        position: relative;
+        left: 50px;
+    }
+
+    .entre-logo img{
+        width: 191px;
+        height: 68px;
+    }
+    
+    .signup-form{
+        display: flex;
+        flex-direction: column;
+        background-color: #E7F5FC;
+        padding: 110px 70px;
+        border-radius: 40px;
+        height: 800px;
+        position: relative;
+        right: 250px;
+        top: -360px;
+    }
+
+    .s-u-input-wrapper{
+        border: 1px solid #282973;
+        width: 344px;
+        height: 48px;
+        background-color: #FFFFFF;
+    }
+
+    .signup-form label{
+        margin-top: 15px;
+        font-style: normal;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 27px;
+        color: #282973;
+    }
+    
+    .s-u-full-name, .s-u-email, .s-u-user-name, .s-u-create-pwd, .s-u-confirm-pwd{
+        outline: none;
+        border: none;
+        width: 312.5px;
+        height: 46px;
+        letter-spacing: normal;
+        word-spacing: normal;
+        font-size: 17px;
+    }
+
+    .s-u-input-wrapper i{
+        visibility: hidden;
+    }
+
+    .shift{
+        margin-left: 9px;
+    }
+
+    .icon{
+        position: relative;
+        top: 7px;
+        width: 25px;
+        height: 25px;
+    }
+
+    .s-u-btn{
+        position: absolute;
+        top: 590px;
+        align-self: center;
+        height: 62px;
+        width: 183px;
+        border-radius: 15px;
+        border-style: none;
+        background-color: #282973;
+        border: 1px solid #282973;
+        color: #FFFFFF;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .log-in-link{
+        display: none;
+    }
+
+    .s-u-socials{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top: -490px;
+        right: 250px;
+    }
+
+    .s-u-socials h3{
+        font-size: 28px;
+    }
+
+    .social-media-icons{
+        display: flex;
+        margin-left: 70px;
+        margin-top: 0.5em;
+    }
+
+    .social-media-icons a{
+        margin-right: 35px;
+    }
+
+    .social-media-icons a img{
+        width: 60px;
+        height: 60px;
     }
 }
