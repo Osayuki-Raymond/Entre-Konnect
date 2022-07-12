@@ -82,57 +82,62 @@ header{
     margin-left: 4px;
 }
 
-h1{
-    color: #282973;
-    position: absolute;
-    width: 303px;
-    height: 120px;
-    left: 137px;
-    top: 170px;
-    font-weight: 700;
-    font-size: 60px;
+.part{
+    width: 100%;
+    height: 100%;
 }
 
-p{
-    position: absolute;
-    width: 524px;
-    height: 108px;
-    left: 110px;
-    top: 275px;
-    font-weight: 500;
-    font-size: 22px;
-    color: #282973;
-}
-
-#btn{
-    cursor: pointer;
-    color: #ffffff;
-    position: absolute;
-    width: 310px;
-    height: 60px;
-    left: 261px;
-    top: 420px;
-    background: #2457c5;
-    border: 3px solid #2457c5;
-    border-radius: 30px;
-    font-weight: 550;
-    font-size: 28px;
-}
-
-.rafikis{
-    position: absolute;
-    width: 730px;
-    height: 630px;
-    left: 700px;
-    top: 130px;
-}
-
-.ellipses{
-    position: absolute;
-    width: 500px;
-    height: 600px;
-    left: -237px;
-    top: 230px;
+ h1{
+        color: #282973;
+        position: absolute;
+        width: 25%;
+        height: auto;
+        left: 137px;
+        top: 170px;
+        font-weight: 700;
+        font-size: 60px;
+    }
+    
+    p{
+        position: absolute;
+        width: 30%;
+        height: auto;
+        left: 110px;
+        top: 275px;
+        font-weight: 500;
+        font-size: 22px;
+        color: #282973;
+    }
+    
+    #btn{
+        font-family: 'Poppins', sans-serif;
+        color: #ffffff;
+        position: absolute;
+        width: 18%;
+        height: auto;
+        left: 261px;
+        top: 430px;
+        background: #2457c5;
+        border: 3px solid #ffffff;
+        border-radius: 30px;
+        font-weight: 550;
+        font-size: 28px;
+    }
+    
+    .rafikis{
+        position: absolute;
+        width: 50%;
+        height: auto;
+        left: 615px;
+        top: 130px;
+    }
+    
+    .ellipses{
+        position: absolute;
+        width: 50%;
+        height: auto;
+        left: -237px;
+        top: 250px;
 }
 
 
@@ -210,7 +215,7 @@ p{
     user-select: none;
 }
 
-body{
+.part{
     width: 100%;
     height: 100%;
 }
@@ -218,52 +223,55 @@ body{
 h1{
     position: absolute;
     color: #282973;
-    width: 91px;
-    height: 36px;
-    top: 140px;
+    width: 20%;
+    height: auto;
+    top: 110px;
     left: 24px;
     font-weight: 700;
     font-size: 24px;
+    line-height: 120px;
 }
 
 p{
     position: absolute;
-    width: 309px;
-    height: 96px;
+    width: 70%;
+    height: auto;
     left: 21px;
-    top: 191px;
+    top: 200px;
     font-weight: 500;
     font-size: 16px;
     color: #282973;
+    line-height: 36px;
 }
 
 #btn{
+    font-family: 'Poppins', sans-serif;
     color: #ffffff;
     position: absolute;
-    width: 186px;
-    height: 51px;
+    width: 50%;
+    height: auto;
     left: 24px;
-    top: 335px;
+    top: 380px;
     background: #2457C5;
     border: 3px solid #FFFFFF;
     border-radius: 30px;
     font-weight: 550;
     font-size: 22px;
+    line-height: 48px;
 }
 
 .rafikis{
     position: absolute;
-    width: 400px;
-    height: 390px;
-    top: 450px;
+    width: 90%;
+    height: auto;
+    top: 498px;
     left: 25px;
-    overflow: hidden;
 }
 
 .ellipses{
     position: absolute;
-    width: 250px;
-    height: 300px;
+    width: 60%;
+    height: auto;
     left: -85px;
     top: 615px;
 }
@@ -294,7 +302,7 @@ p{
 
     .nav-items{
         font-weight: 600;
-        font-size: 14px;
+        font-size: 18px;
     }
 
     .nav-links:focus{ 
@@ -309,7 +317,7 @@ p{
         gap: 70px;
     }
 
-    body{
+    .part{
         width: 100%;
         height: 100%;
     }
@@ -317,51 +325,55 @@ p{
     h1{
         position: absolute;
         color: #282973;
-        width: 303px;
-        height: 120px;
+        width: 20%;
+        height: auto;
         top: 130px;
         left: 130px;
         font-weight: 700;
         font-size: 55px;
+        line-height: 120px;
     }
     
     p{
         position: absolute;
-        width: 524px;
-        height: 108px;
+        width: 45%;
+        height: auto;
         left: 118px;
         top: 240px;
         font-weight: 500;
         font-size: 20px;
         color: #282973;
+        line-height: 36px;
     }
     
     #btn{
-        color: #282973;
+        font-family: 'Poppins', sans-serif;
+        color: #ffffff;
         position: absolute;
-        width: 314px;
-        height: 70px;
+        width: 26%;
+        height: auto;
         left: 118px;
-        top: 400px;
-        background: #ebb376;
-        border: 3px solid #282973;
+        top: 420px;
+        background: #2457c5;
+        border: 3px solid #ffffff;
         border-radius: 30px;
         font-weight: 600;
-        font-size: 32px;
+        font-size: 28px;
+        line-height: 48px;
     }
     
     .rafikis{
         position: absolute;
-        width: 600px;
-        height: 630px;
+        width: 70%;
+        height: auto;
         left: 320px;
         top: 530px;
     }
     
     .ellipses{
         position: absolute;
-        width: 550px;
-        height: 600px;
+        width: 60%;
+        height: auto;
         left: -247px;
         top: 630px;
     }
@@ -398,7 +410,8 @@ p{
 
     .nav-items{
         font-weight: 600;
-        font-size: 16px;
+        font-size: 20px;
+        line-height: 48px;
     }
 
     .nav-links:focus{
@@ -406,7 +419,7 @@ p{
         transition: 0.2s ease;
     }
 
-    body{
+    .part{
         width: 100%;
         height: 100%;
     }
@@ -414,51 +427,55 @@ p{
     h1{
         color: #282973;
         position: absolute;
-        width: 303px;
-        height: 120px;
+        width: 25%;
+        height: auto;
         left: 137px;
         top: 170px;
         font-weight: 700;
         font-size: 60px;
+        line-height: 120px;
     }
     
     p{
         position: absolute;
-        width: 524px;
-        height: 108px;
+        width: 35%;
+        height: auto;
         left: 110px;
         top: 275px;
         font-weight: 500;
         font-size: 22px;
         color: #282973;
+        line-height: 36px;
     }
     
     #btn{
+        font-family: 'Poppins', sans-serif;
         color: #ffffff;
         position: absolute;
-        width: 310px;
-        height: 60px;
+        width: 18%;
+        height: auto;
         left: 261px;
         top: 430px;
         background: #2457c5;
-        border: 3px solid #2457c5;
+        border: 3px solid #ffffff;
         border-radius: 30px;
         font-weight: 550;
         font-size: 28px;
+        line-height: 48px;
     }
     
     .rafikis{
         position: absolute;
-        width: 730px;
-        height: 630px;
+        width: 50%;
+        height: auto;
         left: 605px;
         top: 130px;
     }
     
     .ellipses{
         position: absolute;
-        width: 500px;
-        height: 600px;
+        width: 50%;
+        height: auto;
         left: -237px;
         top: 250px;
 }
