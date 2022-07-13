@@ -9,6 +9,11 @@ body{
     background-color: #f5f5f5;
 }
 
+.container{
+    width: 100%;
+    min-height: 100vh;
+}
+
 header{
     position: fixed;
     top: 0;
@@ -82,62 +87,57 @@ header{
     margin-left: 4px;
 }
 
-.part{
-    width: 100%;
-    height: 100%;
+h1{
+    color: #282973;
+    position: absolute;
+    width: 25%;
+    max-height: 137px;
+    left: 137px;
+    top: 150px;
+    font-weight: 700;
+    font-size: 60px;
 }
 
- h1{
-        color: #282973;
-        position: absolute;
-        width: 25%;
-        height: auto;
-        left: 137px;
-        top: 170px;
-        font-weight: 700;
-        font-size: 60px;
-    }
-    
-    p{
-        position: absolute;
-        width: 30%;
-        height: auto;
-        left: 110px;
-        top: 275px;
-        font-weight: 500;
-        font-size: 22px;
-        color: #282973;
-    }
-    
-    #btn{
-        font-family: 'Poppins', sans-serif;
-        color: #ffffff;
-        position: absolute;
-        width: 18%;
-        height: auto;
-        left: 261px;
-        top: 430px;
-        background: #2457c5;
-        border: 3px solid #ffffff;
-        border-radius: 30px;
-        font-weight: 550;
-        font-size: 28px;
-    }
-    
-    .rafikis{
-        position: absolute;
-        width: 50%;
-        height: auto;
-        left: 615px;
-        top: 130px;
-    }
-    
-    .ellipses{
-        position: absolute;
-        width: 50%;
-        height: auto;
-        left: -237px;
-        top: 250px;
+p{
+    position: absolute;
+    width: 38%;
+    max-height: 108px;
+    left: 110px;
+    top: 270px;
+    font-weight: 500;
+    font-size: 22px;
+    color: #282973;
+}
+
+#btn{
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    position: absolute;
+    width: 22%;
+    max-height: 60px;
+    left: 261px;
+    top: 430px;
+    background: #2457c5;
+    border: 3px solid #ffffff;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 28px;
+}
+
+.rafikis{
+    position: absolute;
+    width: 55%;
+    max-height: 680px;
+    left: 700px;
+    top: 140px;
+}
+
+.ellipses{
+    position: absolute;
+    width: 45%;
+    max-height: 575px;
+    left: -270px;
+    top: 258px;
 }
 
 
@@ -215,65 +215,67 @@ header{
     user-select: none;
 }
 
-.part{
+.container{
     width: 100%;
-    height: 100%;
+    min-height: 100vh;
 }
 
 h1{
     position: absolute;
     color: #282973;
     width: 20%;
-    height: auto;
-    top: 110px;
+    max-height: 36px;
+    top: 150px;
     left: 24px;
     font-weight: 700;
     font-size: 24px;
-    line-height: 120px;
 }
 
 p{
     position: absolute;
     width: 70%;
-    height: auto;
+    max-height: 96px;
     left: 21px;
-    top: 200px;
+    top: 210px;
     font-weight: 500;
     font-size: 16px;
     color: #282973;
-    line-height: 36px;
 }
 
 #btn{
     font-family: 'Poppins', sans-serif;
     color: #ffffff;
     position: absolute;
-    width: 50%;
-    height: auto;
+    width: 45%;
+    max-height: 51px;
     left: 24px;
-    top: 380px;
+    top: 350px;
     background: #2457C5;
     border: 3px solid #FFFFFF;
     border-radius: 30px;
-    font-weight: 550;
+    font-weight: 600;
     font-size: 22px;
-    line-height: 48px;
+}
+
+.navlink{
+    text-decoration: none;
+    color: #ffffff;
 }
 
 .rafikis{
     position: absolute;
-    width: 90%;
-    height: auto;
-    top: 498px;
+    width: 94%;
+    max-height: 450px;
+    top: 450px;
     left: 25px;
 }
 
 .ellipses{
     position: absolute;
-    width: 60%;
-    height: auto;
-    left: -85px;
-    top: 615px;
+    width: 68%;
+    max-height: 600px;
+    left: -65px;
+    top: 610px;
 }
 }
 
@@ -314,68 +316,70 @@ p{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        gap: 70px;
+        gap: 50px;
     }
 
-    .part{
+    .container{
         width: 100%;
-        height: 100%;
+        min-height: 100vh;
     }
 
     h1{
         position: absolute;
         color: #282973;
         width: 20%;
-        height: auto;
-        top: 130px;
+        max-height: 120px;
+        top: 180px;
         left: 130px;
         font-weight: 700;
-        font-size: 55px;
-        line-height: 120px;
+        font-size: 60px;
     }
     
     p{
         position: absolute;
         width: 45%;
-        height: auto;
+        max-height: 108px;
         left: 118px;
-        top: 240px;
+        top: 295px;
         font-weight: 500;
-        font-size: 20px;
+        font-size: 22px;
         color: #282973;
-        line-height: 36px;
     }
     
     #btn{
         font-family: 'Poppins', sans-serif;
         color: #ffffff;
         position: absolute;
-        width: 26%;
-        height: auto;
+        width: 28%;
+        max-height: 70px;
         left: 118px;
-        top: 420px;
+        top: 475px;
         background: #2457c5;
         border: 3px solid #ffffff;
         border-radius: 30px;
         font-weight: 600;
         font-size: 28px;
-        line-height: 48px;
     }
     
+    .navlink{
+        text-decoration: none;
+        color: #ffffff;
+    }
+
     .rafikis{
         position: absolute;
-        width: 70%;
-        height: auto;
-        left: 320px;
-        top: 530px;
+        width: 71%;
+        max-height: 680px;
+        left: 290px;
+        top: 580px;
     }
     
     .ellipses{
         position: absolute;
-        width: 60%;
-        height: auto;
+        width: 70%;
+        max-height: 675px;
         left: -247px;
-        top: 630px;
+        top: 689px;
     }
 }
 
@@ -419,64 +423,66 @@ p{
         transition: 0.2s ease;
     }
 
-    .part{
+    .container{
         width: 100%;
-        height: 100%;
+        height: 100vh;
     }
 
     h1{
         color: #282973;
         position: absolute;
         width: 25%;
-        height: auto;
+        max-height: 137px;
         left: 137px;
-        top: 170px;
+        top: 150px;
         font-weight: 700;
         font-size: 60px;
-        line-height: 120px;
     }
     
     p{
         position: absolute;
-        width: 35%;
-        height: auto;
+        width: 38%;
+        max-height: 108px;
         left: 110px;
-        top: 275px;
+        top: 270px;
         font-weight: 500;
         font-size: 22px;
         color: #282973;
-        line-height: 36px;
     }
     
     #btn{
         font-family: 'Poppins', sans-serif;
         color: #ffffff;
         position: absolute;
-        width: 18%;
-        height: auto;
+        width: 22%;
+        max-height: 60px;
         left: 261px;
         top: 430px;
         background: #2457c5;
         border: 3px solid #ffffff;
         border-radius: 30px;
-        font-weight: 550;
+        font-weight: 600;
         font-size: 28px;
-        line-height: 48px;
+    }
+
+    .navlink{
+        text-decoration: none;
+        color: #ffffff;
     }
     
     .rafikis{
         position: absolute;
         width: 50%;
-        height: auto;
-        left: 605px;
-        top: 130px;
+        max-height: 650px;
+        left: 650px;
+        top: 140px;
     }
     
     .ellipses{
         position: absolute;
-        width: 50%;
-        height: auto;
-        left: -237px;
-        top: 250px;
+        width: 45%;
+        max-height: 640px;
+        left: -270px;
+        top: 260px;
 }
 }
