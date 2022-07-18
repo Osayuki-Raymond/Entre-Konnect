@@ -38,7 +38,7 @@
             <label for="signUpEmail">Email</label>
             <div class="s-u-input-wrapper">
                 <img src="/assets/images/email_icon.svg" alt="" class="icon">
-                <input type="email" name="email" id="signUpEmail" class="s-u-email" required>
+                <input type="email" name="email" id="signUpEmail" class="s-u-email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Must be a correct email address like: example@gmail.com" required>
             </div>
 
             <label for="signUpUserName">Username</label>
@@ -50,13 +50,13 @@
             <label for="signUpCreatePwd">Create Password</label>
             <div class="s-u-input-wrapper">
                 <img src="/assets/images/lock.svg" alt="" class="icon">
-                <input type="password" name="create-password" id="signUpCreatePwd" class="s-u-create-pwd"  minlength="8">
+                <input type="password" name="create-password" id="signUpCreatePwd" class="s-u-create-pwd"  minlength="8" title="min. of 8 characters">
             </div>
 
             <label for="signUpConfirmPwd">Confirm Password</label>
             <div class="s-u-input-wrapper">
                 <i class="fa-solid fa-lock"></i>
-                <input type="password" name="confirm-password" id="signUpConfirmPwd" class="s-u-confirm-pwd shift"  minlength="8">
+                <input type="password" name="confirm-password" id="signUpConfirmPwd" class="s-u-confirm-pwd shift"  minlength="8" title="min. of 8 characters">
             </div>
 
             <input type="submit" value="Sign Up" class="s-u-btn">
