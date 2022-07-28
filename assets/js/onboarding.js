@@ -62,14 +62,13 @@ function showSlidesAuto() {
 if (window.matchMedia("(max-width: 1024px)").matches) {
     showSlidesAuto();
 }
-=======
-    // HIDING THE START AD NEXT BUTTONS
-    if (slideIndex == 2) {
-        document.getElementsByClassName("dots2").className += " active";
-    }
 
-    if (slideIndex == 3) {
-         document.getElementsByClassName("dots3").className += " active";
-    }
-}
-// main
+
+    // HIDING THE START AD NEXT BUTTONS
+    // if (slideIndex == 2) {
+    //     document.getElementsByClassName("dots2").className += " active";
+    // }
+
+    // if (slideIndex == 3) {
+    //     document.getElementsByClassName("dots3").className += " active";
+    // }
