@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+    color: #1F4690;
+    background-color: #fff;
+    font-weight: 300px;
+    font-size: 50px;
+    line-height: 108px;
+}
+
+
+.container{
+    width: 1440px;
+    /* height: 1024px; */
+    margin: auto auto;
+    overflow: hidden;
+}
+#welcome .welcome-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    width: 100%;
+    min-height: 100%;
+}
+#welcome .welcome-image img{
+    display: block;
+    width: 70%;
+    margin-left: 10%;
+    
+}
+#welcome.text{
+    width: 100%;
+    color: #1F4690;
+    margin-left: 80%;
+    font-weight: bolder;
+}
+#welcome .btn-light{
+    display: block;
+    border: 1px solid #1F4690;
+    color: #1F4690;
+    border-radius: 30px;
+    position: relative;
+    top: 0;
+    left: 1040px;
+    margin-left: 20px;
+    margin-top: 50px;
+    padding: 10px 20px;
+    width: 9%;
+}
+
+@media(max-width: 1024px){
+    .welcome-page{
+        max-width: 950px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    #welcome .welcome-page .text{
+        width: 900px;
+        font-weight: bold;
+        padding-right: 20px;
+    }
+    .welcome-page img{
+        position: relative;
+        top: 0;
+        left: 100px;
+        width: 50%;
+        margin-top: 50px;
+    }
+    #welcome .btn-light{
+        display: none;
+    }
+}
+

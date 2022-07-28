@@ -325,14 +325,16 @@
     .heading{
         display: flex;
         position: relative;
-        top: 60px;
+        top: 140px;
     }
 
     .heading h2{
         font-size: 50px;
+        text-align: center;
         font-style: normal;
         color: #282973;
         margin-right: 80px;
+        margin-bottom: 400px;
         z-index: 1;
     }
 
@@ -340,7 +342,6 @@
         align-self: center;
         justify-self: center;
         position: relative;
-        z-index: 1;
         top: 167px;
         left: 200px;
         height: 400px;
@@ -350,6 +351,7 @@
         display: flex;
         position: relative;
         left: 50px;
+        margin-bottom: 400px;
     }
 
     .entre-logo img{
